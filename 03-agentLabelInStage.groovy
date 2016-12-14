@@ -2,7 +2,7 @@ pipeline {
     agent none
     stages {
         stage("foo") {
-            agent any
+            agent label:'some-label'
             steps {
                 sh('echo "THIS WORKS"')
             }
